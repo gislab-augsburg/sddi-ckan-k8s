@@ -4,7 +4,7 @@ global:
     certManager:
       issuerEmail: me@example.com
     domains:
-      - myhost.info
+      - myhost-base.info
 
 # Nginx ingress configuration -------------------------------------------------
 # This needs to be enabled, if you don't have nginx-ingress installed already
@@ -33,7 +33,7 @@ ckan:
   persistence:
     enabled: false
 
-  siteUrl: https://myhost.info
+  siteUrl: https://myhost-base.info
 
   # Startup -------------------------------------------------------------------
   # Depending on the hardware and configuration of you minikube cluster the

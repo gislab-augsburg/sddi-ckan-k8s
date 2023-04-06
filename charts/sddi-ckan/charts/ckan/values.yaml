@@ -12,11 +12,11 @@ fullnameOverride: ckan
 
 image:
   # -- [Image repository](https://kubernetes.io/docs/concepts/containers/images/)
-  repository: ghcr.io/tum-gis/ckan-sddi
+  repository: ghcr.io/tum-gis/ckan-sddi-base
   # -- [Image pull policy](https://kubernetes.io/docs/concepts/containers/images/#image-pull-policy)
   pullPolicy: IfNotPresent
   # -- Overrides the image tag whose default is the chart `appVersion`.
-  tag: ""
+  tag: "latest"
 
 # -- [Image pull secrets](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
 imagePullSecrets: []
@@ -117,19 +117,19 @@ ingress:
 # [CKAN configuration site settings](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-url)
 siteUrl: https://my-ckan.de
 # -- Title of the CKAN instance, displayed in Browser windows/tab name
-siteTitle: My CKAN instance
+siteTitle: My CKAN instance THE BASE VERSION, GISLAB AUGSBURG
 # -- [CKAN config site_id](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-id)
 siteId: default
 # -- [CKAN config site_id](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-description)
-siteDescription: This is my CKAN instance for stuff.
+siteDescription: This is my CKAN instance for stuff. THE BASE VERSION, GISLAB AUGSBURG
 # -- CKAN config intro text](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-intro-text)
-siteIntroText: This is the intro to my CKAN instance.
+siteIntroText: This is the intro to my CKAN instance. THE BASE VERSION, GISLAB AUGSBURG
 # -- Path to CKAN site logo image. Custom logos will usually be located in `/webassets/`.
 # See `webassets.path` setting.
 # [CKAN config site_id](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-logo)
 siteLogo: /base/images/ckan-logo.png
 # -- [CKAN config about](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-about)
-siteAbout: My CKAN about info.
+siteAbout: My CKAN about info. THE BASE VERSION, GISLAB AUGSBURG
 # -- Path to CKAN favicon. Custom logos will usually be located in `/webassets/`.
 # See `webassets.path` setting.
 # [CKAN config site_id](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-logo)
