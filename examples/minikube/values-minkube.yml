@@ -4,7 +4,7 @@ global:
     certManager:
       issuerEmail: me@example.com
     domains:
-      - myhost-base.info
+      - myhost-check.info
 
 # Nginx ingress configuration -------------------------------------------------
 # This needs to be enabled, if you don't have nginx-ingress installed already
@@ -33,7 +33,21 @@ ckan:
   persistence:
     enabled: false
 
-  siteUrl: https://myhost-base.info
+  siteUrl: https://myhost-check.info
+  
+  siteTitle: My CKAN instance THE BASE VERSION, GISLAB AUGSBURG
+  # -- [CKAN config site_id](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-id)
+  siteId: default
+  # -- [CKAN config site_id](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-description)
+  siteDescription: This is my CKAN instance for stuff. THE BASE VERSION, GISLAB AUGSBURG
+  # -- CKAN config intro text](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-intro-text)
+  siteIntroText: This is the intro to my CKAN instance. THE BASE VERSION, GISLAB AUGSBURG
+  # -- Path to CKAN site logo image. Custom logos will usually be located in `/webassets/`.
+  # See `webassets.path` setting.
+  # [CKAN config site_id](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-logo)
+  siteLogo: /base/images/ckan-logo.png
+  # -- [CKAN config about](https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-site-about)
+  siteAbout: My CKAN about info. THE BASE VERSION, GISLAB AUGSBURG
 
   # Startup -------------------------------------------------------------------
   # Depending on the hardware and configuration of you minikube cluster the
